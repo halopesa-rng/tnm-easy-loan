@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="sw"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Independent Loan Application — Tanzania Demo</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<header><div class="logo">MX</div><div><b>Independent Loan Application</b><small>TANZANIA • DEMO PORTAL</small></div></header>
+<div class="notice">Huduma huru ya majaribio — haihusiani na Mixx by Yas wala kampuni yoyote ya simu.</div>
+<main>
+<div class="hero"><div class="icon">MX</div><h1>Ombi la Mkopo</h1><p>Jaza taarifa zako kuwasilisha ombi la majaribio. Tumia namba ya kumbukumbu pekee.</p></div>
+<div class="steps"><span class="active" id="tab1">1 · Taarifa</span><span id="tab2">2 · Uhakiki</span><span id="tab3">3 · Kiasi</span></div>
+<section class="card" id="page1">
+<h2>Taarifa zako</h2>
+<label for="name">Jina kamili</label><input id="name" maxlength="80" placeholder="Andika jina lako kamili" autocomplete="name">
+<label for="phone">Namba ya simu ya Tanzania</label><input id="phone" inputmode="tel" maxlength="24" placeholder="Mfano: 07XXXXXXXX" autocomplete="tel">
+<label for="applicationRef">Namba ya kumbukumbu ya ombi</label><input id="applicationRef" maxlength="32" placeholder="Andika namba ya kumbukumbu">
+<p class="hint">Usiweke PIN, nenosiri, au msimbo wa uthibitishaji wa SMS.</p>
+<button id="submit1">Wasilisha kwa ukaguzi →</button><p class="status" id="status1" role="status"></p>
+</section>
+<section class="card hidden" id="page2">
+<h2>Uhakiki wa ombi</h2><p>Endelea kuwasilisha ombi lako kwa ukaguzi wa msimamizi.</p>
+<p class="hint">Usiweke msimbo wa SMS, OTP, PIN au taarifa za siri. Hatua hii ni ya ukaguzi wa majaribio pekee.</p>
+<div class="timer"><div class="ring"><b id="count">30</b><small>SECONDS</small></div><p id="timerText">Inasubiri ukaguzi wa majaribio…</p></div>
+<button id="submit2">Tuma kwa ukaguzi</button><p class="status" id="status2" role="status"></p>
+</section>
+<section class="card hidden" id="page3">
+<h2>Kiasi cha mkopo</h2><p>Weka kiasi unachoomba kwa Shilingi za Tanzania (TSh).</p>
+<label for="amount">Kiasi (TSh)</label><input id="amount" type="number" min="1" max="100000000" placeholder="Mfano: 50000">
+<button id="submit3">Endelea →</button><p class="status" id="status3" role="status"></p>
+</section>
+<section class="card hidden success" id="page4">
+<div class="confetti">🎉</div><h1>Hongera!</h1><p>Ombi lako la majaribio limewasilishwa.</p><div class="notice">Huu ni mfumo wa majaribio tu. Hakuna mkopo ulioidhinishwa au kuhakikishwa.</div>
+<button onclick="location.reload()">Anza tena</button>
+</section>
+<footer>Independent Loan Demo Tanzania · Haihusiani na Mixx by Yas</footer>
+</main><script src="/app.js"></script></body></html>
